@@ -8,7 +8,7 @@ export async function registerRoutes(
 ): Promise<Server> {
   
   app.get("/api/health", (_req, res) => {
-    res.json({ status: "ok", time: new Date().toISOString() });
+    res.json({ status: "ok", message: "Server is awake" });
   });
 
   return httpServer;
